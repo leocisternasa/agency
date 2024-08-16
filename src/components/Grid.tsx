@@ -14,13 +14,15 @@ const MEDAL_IMAGE_MAPPER = {
     'Gold Medal': goldMedal,
     'Silver Medal': silverMedal,
     'Bronze Medal': bronzeMedal,
-}
+} as const
+
+type MedalImage = keyof typeof MEDAL_IMAGE_MAPPER
 
 const MedalRenderer = (props: CustomCellRendererProps) => {
     console.log(props)
     return (
         <div className='flex'>
-            <Image src={MEDAL_IMAGE_MAPPER[props.data.medal_type]} alt='gold medal' width={35} height={35}/>
+            <Image src={MEDAL_IMAGE_MAPPER[props.data.medal_type as MedalImage]} alt='gold medal' width={35} height={35}/>
             {props.data.medal_type}
         </div>
     )
@@ -36,7 +38,6 @@ const Grid = () => {
       const [colDefs, setColDefs] = useState<ColDef[]>([
         { field: "medal_date", headerName: 'Date' },
         { field: "medal_type", headerName: 'Medal Type', cellRenderer: MedalRenderer },
-        { field: "medal_code", headerName: 'Medal code' },
         { field: "name", headerName: 'Name' },
         { field: "gender", headerName: 'Gender' },
         { field: "country", headerName: 'Country' },
