@@ -1,12 +1,12 @@
-"use client";
-import React, { useState } from "react";
-import { useForm, useWatch } from "react-hook-form";
+'use client';
+import React, { useState } from 'react';
+import { useForm, useWatch } from 'react-hook-form';
 import {
   Disclosure,
   Transition,
   DisclosurePanel,
   DisclosureButton,
-} from "@headlessui/react";
+} from '@headlessui/react';
 
 export function PopupWidget() {
   const {
@@ -16,21 +16,21 @@ export function PopupWidget() {
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm({
-    mode: "onTouched",
+    mode: 'onTouched',
   });
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const [Message, setMessage] = useState("");
+  const [Message, setMessage] = useState('');
 
-  const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
+  const userName = useWatch({ control, name: 'name', defaultValue: 'Someone' });
 
   const onSubmit = async (data: any, e: any) => {
     console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify(data, null, 2),
     })
@@ -48,7 +48,7 @@ export function PopupWidget() {
       })
       .catch((error) => {
         setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
+        setMessage('Client Error. Please check the console.log for more info');
         console.log(error);
       });
   };
@@ -90,7 +90,7 @@ export function PopupWidget() {
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 rotate-45"
                 className="absolute w-6 h-6 text-white"
-                as={"div"}
+                as={'div'}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,23 +130,23 @@ export function PopupWidget() {
                       <input
                         type="hidden"
                         value="YOUR_ACCESS_KEY_HERE"
-                        {...register("apikey")}
+                        {...register('apikey')}
                       />
                       <input
                         type="hidden"
                         value={`${userName} sent a message from Nextly`}
-                        {...register("subject")}
+                        {...register('subject')}
                       />
                       <input
                         type="hidden"
                         value="Nextly Template"
-                        {...register("from_name")}
+                        {...register('from_name')}
                       />
                       <input
                         type="checkbox"
                         className="hidden"
-                        style={{ display: "none" }}
-                        {...register("botcheck")}
+                        style={{ display: 'none' }}
+                        {...register('botcheck')}
                       ></input>
 
                       <div className="mb-4">
@@ -160,14 +160,14 @@ export function PopupWidget() {
                           type="text"
                           id="full_name"
                           placeholder="John Doe"
-                          {...register("name", {
-                            required: "Full name is required",
+                          {...register('name', {
+                            required: 'Full name is required',
                             maxLength: 80,
                           })}
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.name
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-indigo-600 ring-indigo-100'
                           }`}
                         />
                         {errors.name && (
@@ -187,18 +187,18 @@ export function PopupWidget() {
                         <input
                           type="email"
                           id="email"
-                          {...register("email", {
-                            required: "Enter your email",
+                          {...register('email', {
+                            required: 'Enter your email',
                             pattern: {
                               value: /^\S+@\S+$/i,
-                              message: "Please enter a valid email",
+                              message: 'Please enter a valid email',
                             },
                           })}
                           placeholder="you@company.com"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-indigo-600 ring-indigo-100'
                           }`}
                         />
 
@@ -220,14 +220,14 @@ export function PopupWidget() {
                         <textarea
                           rows={4}
                           id="message"
-                          {...register("message", {
-                            required: "Enter your Message",
+                          {...register('message', {
+                            required: 'Enter your Message',
                           })}
                           placeholder="Your Message"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
-                              ? "border-red-600 focus:border-red-600 ring-red-100"
-                              : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
+                              ? 'border-red-600 focus:border-red-600 ring-red-100'
+                              : 'border-gray-300 focus:border-indigo-600 ring-indigo-100'
                           }`}
                           required
                         ></textarea>
@@ -264,7 +264,7 @@ export function PopupWidget() {
                               ></path>
                             </svg>
                           ) : (
-                            "Send Message"
+                            'Send Message'
                           )}
                         </button>
                       </div>
@@ -273,7 +273,7 @@ export function PopupWidget() {
                         id="result"
                       >
                         <span>
-                          Powered by{" "}
+                          Powered by{' '}
                           <a
                             href="https://Web3Forms.com"
                             className="text-gray-600"
