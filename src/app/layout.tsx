@@ -28,8 +28,7 @@ export default function RootLayout({
           <div>{children}</div>
           <Footer />
           <PopupWidget />
-          <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-          <script src="https://mediafiles.botpress.cloud/bf12f5c9-d9f6-4b23-a11c-6050f17fe9b5/webchat/v2.1/config.js"></script>
+          <DocMoviAssistant />
         </ThemeProvider>
       </body>
     </html>

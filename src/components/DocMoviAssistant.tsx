@@ -3,10 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import docMoviLogo from '../../public/DocMoviAi_logo.png';
+import Script from 'next/script';
 
 function DocMoviAssistant() {
   return (
     <div>
+      <Script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></Script>
+      <Script src="https://mediafiles.botpress.cloud/bf12f5c9-d9f6-4b23-a11c-6050f17fe9b5/webchat/v2.1/config.js"></Script>
       <Image
         onClick={() => (window as any).botpress.open()}
         src={docMoviLogo}
