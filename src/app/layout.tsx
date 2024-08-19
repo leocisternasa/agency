@@ -6,7 +6,6 @@ import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { PopupWidget } from '@/components/PopupWidget';
-import DocMoviAssistant from '@/components/DocMoviAssistant';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,7 +27,6 @@ export default function RootLayout({
           <div>{children}</div>
           <Footer />
           <PopupWidget />
-          <DocMoviAssistant />
         </ThemeProvider>
       </body>
     </html>
