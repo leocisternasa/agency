@@ -11,8 +11,8 @@ export const Testimonials = () => {
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 md:px-14 p-4 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="md:text-xl text-lg leading-normal ">
               Working with <strong>Grid Trust</strong> transformed our data
               visualization. Their AG Grid expertise enhanced our marketing
               strategies, enabling real-time analysis and informed
@@ -27,8 +27,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 md:px-14 p-4 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="md:text-xl text-lg leading-normal ">
               AG Grid has transformed our financial reporting. Its powerful
               features enable fast, accurate analysis of large datasets, making
               compliance and visualization effortless. Highly recommended for
@@ -43,8 +43,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 md:px-14 p-4 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="md:text-xl text-lg leading-normal ">
               This is an <Mark>awesome</Mark> landing page template I&apos;ve
               seen. I would use this for anything.
             </p>
@@ -69,8 +69,8 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center mt-8 space-x-3 gap-4 h-40">
-      <div className="rounded-full overflow-hidden filter grayscale max-w-[30%]">
+    <div className="flex flex-col md:flex-row  items-center  mt-8 md:space-x-3 gap-4 h-full">
+      <div className="rounded-full overflow-hidden filter grayscale md:max-w-[30%]">
         <Image
           src={props.image}
           width="80"
@@ -79,9 +79,11 @@ function Avatar(props: Readonly<AvatarProps>) {
           placeholder="blur"
         />
       </div>
-      <div className="max-w-[60%] flex flex-col">
+      <div className="md:max-w-[60%] flex flex-col justify-center items-center md:justify-start md:items-start">
         <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
+        <div className="text-gray-600 dark:text-gray-400 text-center md:text-left">
+          {props.title}
+        </div>
       </div>
     </div>
   );
