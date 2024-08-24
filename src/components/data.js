@@ -14,7 +14,7 @@ import benefitTwoListOneImg from '../../public/img/benefit-two-list-one.png';
 import benefitTwoListTwoImg from '../../public/img/benefit-two-list-two.png';
 import benefitTwoListThreeImg from '../../public/img/benefit-two-list-three.png';
 
-import benefitOneImg from '../../public/img/benefit-one.png';
+import benefitOneImg from '../../public/js.png';
 import benefitTwoImg from '../../public/img/benefit-two.png';
 
 const benefitOne = {
@@ -50,7 +50,7 @@ const benefitTwo = {
   bullets: [
     {
       title: 'Gold Standard for Enterprise Applications',
-      desc: 'Nextly is designed as a mobile first responsive template.',
+      desc: 'Unrivaled component-based solution, perfect for building robust business software.',
       icon: <DevicePhoneMobileIcon />,
       img: benefitTwoListOneImg,
     },
