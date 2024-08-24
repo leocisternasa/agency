@@ -3,8 +3,8 @@ import CompanyLogos from './CompanyLogos';
 
 function UsedBycComponent() {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col my-16">
+      <div className="flex flex-col items-center gap-2 mb-2">
         <h1 className="font-bold text-3xl">
           Embraced by 9 out of 10 top-tier corporations
         </h1>

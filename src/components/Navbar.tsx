@@ -63,10 +63,10 @@ export const Navbar = () => {
                       </Link>
                     ))}
                     <Link
-                      href="/"
+                      href="https://calendly.com/gridtrustpro"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
-                      Get In Touch
+                      Book a call
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -93,10 +93,10 @@ export const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
-            href="/"
+            href="https://calendly.com/gridtrustpro"
             className="px-6 py-2 text-white bg-[#4a5699] rounded-md md:ml-5"
           >
-            Get In Touch
+            Book a call
           </Link>
 
           <ThemeChanger />
