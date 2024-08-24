@@ -5,16 +5,14 @@ import './globals.css';
 
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { PopupWidget } from '@/components/PopupWidget';
 import Head from 'next/head';
-import ogImage from '@/public/favicon.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'GridTrust',
   description:
-    'GridTrust is a platform for building high-performance, data-rich web applications that drive business success',
+    'We build high-performance, data-rich web applications that drive business success. Book a call today to learn more!',
 };
 
 export default function RootLayout({
@@ -41,7 +39,6 @@ export default function RootLayout({
           <Navbar />
           <div>{children}</div>
           <Footer />
-          {/* <PopupWidget /> */}
         </ThemeProvider>
       </body>
     </html>

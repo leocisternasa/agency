@@ -27,7 +27,7 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Unlock the Power of Data with AG Grid Specialists.
+              Unleash Your Data with AG Grid Pros
               <br />
               Book a call today!
             </div>
