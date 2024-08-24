@@ -47,8 +47,7 @@ export default function Home() {
       <Testimonials />
 
       <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        Answers at Your Fingertips: Your Guide to Smoother Solutions
       </SectionTitle>
 
       <Faq />
