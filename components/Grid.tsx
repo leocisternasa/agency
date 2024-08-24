@@ -1,6 +1,7 @@
 'use client';
 import { AgGridReact, CustomCellRendererProps } from 'ag-grid-react';
 import { ColDef, ColGroupDef, ValueGetterParams } from 'ag-grid-community';
+import 'ag-grid-enterprise';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-quartz.css';
 import { useState } from 'react';
@@ -41,31 +42,49 @@ const Grid = () => {
   ]);
 
   const [colDefs, setColDefs] = useState<ColDef[]>([
-    { field: 'medal_date', headerName: 'Date' },
+    { field: 'medal_date', headerName: 'Date', filter: true },
     {
       field: 'medal_type',
       headerName: 'Medal Type',
       cellRenderer: MedalRenderer,
+      filter: true,
     },
-    { field: 'name', headerName: 'Name' },
-    { field: 'gender', headerName: 'Gender' },
-    { field: 'country', headerName: 'Country' },
-    { field: 'country_code', headerName: 'Country code' },
-    { field: 'nationality', headerName: 'Nationality' },
-    { field: 'team', headerName: 'Team' },
-    { field: 'team_gender', headerName: 'Team gender' },
-    { field: 'discipline', headerName: 'Discipline' },
-    { field: 'event', headerName: 'Event' },
-    { field: 'event_type', headerName: 'Event type' },
-    { field: 'birth_date', headerName: 'Birth date' },
+    { field: 'name', headerName: 'Name', filter: true },
+    { field: 'gender', headerName: 'Gender', filter: true },
+    { field: 'country', headerName: 'Country', filter: true },
+    { field: 'country_code', headerName: 'Country code', filter: true },
+    { field: 'nationality', headerName: 'Nationality', filter: true },
+    { field: 'team', headerName: 'Team', filter: true },
+    { field: 'team_gender', headerName: 'Team gender', filter: true },
+    { field: 'discipline', headerName: 'Discipline', filter: true },
+    { field: 'event', headerName: 'Event', filter: true },
+    { field: 'event_type', headerName: 'Event type', filter: true },
+    { field: 'birth_date', headerName: 'Birth date', filter: true },
   ]);
   return (
-    // wrapping container with theme & size
-    <div
-      className="ag-theme-quartz" // applying the Data Grid theme
-      style={{ height: 500, width: '100%' }} // the Data Grid will fill the size of the parent container
-    >
-      <AgGridReact rowData={data} columnDefs={colDefs} />
+    <div className="ag-theme-quartz" style={{ height: 500, width: '100%' }}>
+      <AgGridReact
+        rowData={data}
+        columnDefs={colDefs}
+        sideBar={{
+          toolPanels: [
+            {
+              id: 'columns',
+              labelDefault: 'Columns',
+              labelKey: 'columns',
+              iconKey: 'columns',
+              toolPanel: 'agColumnsToolPanel',
+            },
+            {
+              id: 'filters',
+              labelDefault: 'Filters',
+              labelKey: 'filters',
+              iconKey: 'filter',
+              toolPanel: 'agFiltersToolPanel',
+            },
+          ],
+        }}
+      />
     </div>
   );
 };
