@@ -12,7 +12,7 @@ export const Testimonials = () => {
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+            <p className="text-xl leading-normal ">
               Working with <strong>Grid Trust</strong> transformed our data
               visualization. Their AG Grid expertise enhanced our marketing
               strategies, enabling real-time analysis and informed
@@ -21,14 +21,14 @@ export const Testimonials = () => {
 
             <Avatar
               image={pabloImage}
-              name="Pablo Saaverdra"
+              name="Pablo Saavedra"
               title="Professional in Web Analytics, Data Driven, Performance Marketing and Growth Marketing."
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+            <p className="text-xl leading-normal ">
               AG Grid has transformed our financial reporting. Its powerful
               features enable fast, accurate analysis of large datasets, making
               compliance and visualization effortless. Highly recommended for
@@ -44,7 +44,7 @@ export const Testimonials = () => {
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+            <p className="text-xl leading-normal ">
               This is an <Mark>awesome</Mark> landing page template I&apos;ve
               seen. I would use this for anything.
             </p>
@@ -69,7 +69,7 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center mt-8 space-x-3 gap-4">
+    <div className="flex items-center mt-8 space-x-3 gap-4 h-40">
       <div className="rounded-full overflow-hidden filter grayscale max-w-[30%]">
         <Image
           src={props.image}
