@@ -4,7 +4,7 @@ import { Container } from './Container';
 
 import pabloImage from '@/public/pablo_avatar.jpeg';
 import criAvatar from '@/public/critobal_avatar.jpeg';
-import userThreeImg from '../public/img/user3.jpg';
+import graceAvatar from '@/public/grace_avatar.jpeg';
 
 export const Testimonials = () => {
   return (
@@ -45,14 +45,17 @@ export const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 md:px-14 p-4 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="md:text-xl text-lg leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              AG Grid is a high-impact tool for omnichannel strategy and
+              e-commerce. <strong>Grid Trust</strong>'s expertise has
+              significantly enhanced our data management, streamlining
+              operations and improving customer experience. Their implementation
+              skills are unmatched!
             </p>
 
             <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              image={graceAvatar}
+              name="Grace Argote A."
+              title="Omnichannel strategist and e-commerce specialist. International trade initiatives and digital transformation at Walmart"
             />
           </div>
         </div>
