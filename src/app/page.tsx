@@ -8,6 +8,7 @@ import { Faq } from '@/components/Faq';
 import { Cta } from '@/components/Cta';
 
 import { benefitOne, benefitTwo } from '@/components/data';
+import UsedBycComponent from '@/components/UsedByComponent';
 export default function Home() {
   return (
     <Container>
@@ -21,6 +22,7 @@ export default function Home() {
       </SectionTitle>
 
       <Benefits data={benefitOne} />
+      <UsedBycComponent />
       <Benefits imgPos="right" data={benefitTwo} />
 
       <SectionTitle

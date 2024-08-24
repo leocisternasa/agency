@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { Container } from '@/components/Container';
 
@@ -13,7 +13,7 @@ interface BenefitsProps {
       title: string;
       desc: string;
       icon: React.ReactNode;
-      img: string;
+      img?: StaticImageData;
     }[];
   };
 }
