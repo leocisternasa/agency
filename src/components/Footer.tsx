@@ -4,8 +4,8 @@ import React from 'react';
 import { Container } from '@/components/Container';
 
 export function Footer() {
-  const navigation = [];
-  const legal = [];
+  const navigation: string[] = [];
+  const legal: string[] = [];
   return (
     <div className="relative">
       <Container>
