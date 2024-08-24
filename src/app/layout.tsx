@@ -6,6 +6,8 @@ import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { PopupWidget } from '@/components/PopupWidget';
+import Head from 'next/head';
+import ogImage from '@/../public/favicon.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <title>Your Website Title</title>
+        <meta property="og:title" content="Grid Trust" />
+        <meta
+          property="og:description"
+          content="Unleash Yout Data with AG Grid Pros"
+        />
+        <meta property="og:image" content="public/favicon.png" />
+        <meta property="og:url" content="https://gridtrust.pro" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <Navbar />
