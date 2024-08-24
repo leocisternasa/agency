@@ -46,9 +46,10 @@ export default function Home() {
 
       <Testimonials />
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answers at Your Fingertips: Your Guide to Smoother Solutions
-      </SectionTitle>
+      <SectionTitle
+        preTitle="FAQ"
+        title="Frequently Asked Questions"
+      ></SectionTitle>
 
       <Faq />
       <Cta />
