@@ -46,7 +46,7 @@ export const Testimonials = () => {
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 md:px-14 p-4 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="md:text-xl text-lg leading-normal ">
               AG Grid is a high-impact tool for omnichannel strategy and
-              e-commerce. <strong>Grid Trust</strong>'s expertise has
+              e-commerce. <strong>Grid Trust</strong>\'s expertise has
               significantly enhanced our data management, streamlining
               operations and improving customer experience. Their implementation
               skills are unmatched!
