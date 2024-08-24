@@ -10,13 +10,11 @@ export const Hero = () => {
         <div className="flex items-center w-full">
           <div className="w-full mb-8 text-center">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Unlock the Power of Data with AG Grid Specialists
+              Unleash Your Data with AG Grid Pros
             </h1>
-            {/* <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Nextly is a free landing page & marketing website
-              template for startups and indie projects. Its built with
-              Next.js & TailwindCSS. And its completely open-source.
-            </p> */}
+            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+              Test Drive Olympic Glory: Dive into Live Data! 👇
+            </p>
           </div>
         </div>
         <div className="flex items-center justify-center w-full">
