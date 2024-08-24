@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from '@/components/Container';
 
 import pabloImage from '@/../public/pablo_avatar.jpeg';
-import userTwoImg from '../../public/img/user2.jpg';
+import criAvatar from '@/../public/critobal_avatar.jpeg';
 import userThreeImg from '../../public/img/user3.jpg';
 
 export const Testimonials = () => {
@@ -29,14 +29,16 @@ export const Testimonials = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              AG Grid has transformed our financial reporting. Its powerful
+              features enable fast, accurate analysis of large datasets, making
+              compliance and visualization effortless. Highly recommended for
+              any finance professional!
             </p>
 
             <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              image={criAvatar}
+              name="Cristobal Torres"
+              title="Finance professional, information and management control engineer "
             />
           </div>
         </div>
