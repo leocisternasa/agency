@@ -1,10 +1,10 @@
-import React from "react";
-import { Container } from "@/components/Container";
+import React from 'react';
+import { Container } from '@/components/Container';
 
 interface SectionTitleProps {
   preTitle?: string;
   title?: string;
-  align?: "left" | "center";
+  align?: 'left' | 'center';
   children?: React.ReactNode;
 }
 
@@ -12,10 +12,11 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
     <Container
       className={`flex w-full flex-col mt-4 ${
-        props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
+        props.align === 'left' ? '' : 'items-center justify-center text-center'
+      }`}
+    >
       {props.preTitle && (
-        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
+        <div className="text-sm font-bold tracking-wider text-[#4a5699] uppercase">
           {props.preTitle}
         </div>
       )}
@@ -33,5 +34,4 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       )}
     </Container>
   );
-}
-
+};

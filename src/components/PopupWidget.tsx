@@ -58,7 +58,7 @@ export function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-indigo-500 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 ease">
+            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#4a5699] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -240,7 +240,7 @@ export function PopupWidget() {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                          className="w-full px-3 py-4 text-white bg-[#4a5699] rounded-md focus:bg-indigo-600 focus:outline-none"
                         >
                           {isSubmitting ? (
                             <svg
@@ -308,7 +308,7 @@ export function PopupWidget() {
                       </h3>
                       <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
-                        className="mt-6 text-indigo-600 focus:outline-none"
+                        className="mt-6 text-[#4a5699] focus:outline-none"
                         onClick={() => reset()}
                       >
                         Go back
@@ -338,7 +338,7 @@ export function PopupWidget() {
                       </h3>
                       <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
-                        className="mt-6 text-indigo-600 focus:outline-none"
+                        className="mt-6 text-[#4a5699]  focus:outline-none"
                         onClick={() => reset()}
                       >
                         Go back

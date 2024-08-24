@@ -1,30 +1,28 @@
-import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import { Container } from "@/components/Container";
+import Link from 'next/link';
+import Image from 'next/image';
+import React from 'react';
+import { Container } from '@/components/Container';
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const navigation = ['Product', 'Features', 'Pricing', 'Company', 'Blog'];
+  const legal = ['Terms', 'Privacy', 'Legal'];
   return (
     <div className="relative">
       <Container>
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div>
-              {" "}
+              {' '}
               <Link
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/gridtrust-logo.svg"
                   alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  width="150"
+                  height="60"
                 />
-                <span>Nextly</span>
               </Link>
             </div>
 
@@ -113,11 +111,11 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
+          Copyright © {new Date().getFullYear()}. Made with ♥ by{' '}
           <a href="https://web3templates.com/" target="_blank" rel="noopener">
             Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
+          </a>{' '}
+          Illustrations from{' '}
           <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
             Glazestock
           </a>
