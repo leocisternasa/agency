@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -8,11 +8,11 @@ interface ContainerProps {
 export function Container(props: Readonly<ContainerProps>) {
   return (
     <div
-      className={`container p-8 mx-auto xl:px-0 ${
-        props.className ? props.className : ""
-      }`}>
+      className={`container px-3 py-8 md:p-8 mx-auto xl:px-0 ${
+        props.className ? props.className : ''
+      }`}
+    >
       {props.children}
     </div>
   );
 }
-
