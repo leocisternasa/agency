@@ -7,15 +7,15 @@ import {
   SunIcon,
 } from '@heroicons/react/24/solid';
 
-import benefitListOneImg from '../../public/img/benefit-list-one.png';
-import benefitListTwoImg from '../../public/img/benefit-list-two.png';
-import benefitListThreeImg from '../../public/img/benefit-list-three.png';
-import benefitTwoListOneImg from '../../public/img/benefit-two-list-one.png';
-import benefitTwoListTwoImg from '../../public/img/benefit-two-list-two.png';
-import benefitTwoListThreeImg from '../../public/img/benefit-two-list-three.png';
+import benefitListOneImg from '../public/img/benefit-list-one.png';
+import benefitListTwoImg from '../public/img/benefit-list-two.png';
+import benefitListThreeImg from '../public/img/benefit-list-three.png';
+import benefitTwoListOneImg from '../public/img/benefit-two-list-one.png';
+import benefitTwoListTwoImg from '../public/img/benefit-two-list-two.png';
+import benefitTwoListThreeImg from '../public/img/benefit-two-list-three.png';
 
-import benefitOneImg from '../../public/js.png';
-import benefitTwoImg from '../../public/img/benefit-two.png';
+import benefitOneImg from '../public/js.png';
+import benefitTwoImg from '../public/img/benefit-two.png';
 
 const benefitOne = {
   title: 'Expertise in AG Grid, the gold standard for JavaScript grids',

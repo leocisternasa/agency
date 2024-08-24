@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Container } from '@/components/Container';
+import { Container } from './Container';
 import heroImg from '../../public/img/hero.png';
 import Grid from './Grid';
 

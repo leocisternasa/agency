@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import customersLogos from '@/../public/ag-grid-customer-logos.webp';
+import customersLogos from '@/public/ag-grid-customer-logos.webp';
 
 const CompanyLogos: React.FC = () => {
   return (

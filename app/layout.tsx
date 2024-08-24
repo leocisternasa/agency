@@ -7,7 +7,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { PopupWidget } from '@/components/PopupWidget';
 import Head from 'next/head';
-import ogImage from '@/../public/favicon.png';
+import ogImage from '@/public/favicon.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           property="og:description"
           content="Unleash Yout Data with AG Grid Pros"
         />
-        <meta property="og:image" content="public/favicon.png" />
+        <meta property="og:image" content="public/logoIco.png" />
         <meta property="og:url" content="https://gridtrust.pro" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

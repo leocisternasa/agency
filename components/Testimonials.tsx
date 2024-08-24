@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import { Container } from '@/components/Container';
+import { Container } from './Container';
 
-import pabloImage from '@/../public/pablo_avatar.jpeg';
-import criAvatar from '@/../public/critobal_avatar.jpeg';
-import userThreeImg from '../../public/img/user3.jpg';
+import pabloImage from '@/public/pablo_avatar.jpeg';
+import criAvatar from '@/public/critobal_avatar.jpeg';
+import userThreeImg from '../public/img/user3.jpg';
 
 export const Testimonials = () => {
   return (
