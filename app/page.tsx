@@ -26,15 +26,11 @@ export default function Home() {
       <Benefits imgPos="right" data={benefitTwo} />
 
       <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
+        preTitle="Want to see more?"
+        title="Discover all the features"
+      ></SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+      <Video videoId="bcMvTUVbMvI" />
 
       <SectionTitle
         preTitle="Testimonials"

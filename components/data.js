@@ -15,7 +15,7 @@ import benefitTwoListTwoImg from '../public/img/benefit-two-list-two.png';
 import benefitTwoListThreeImg from '../public/img/benefit-two-list-three.png';
 
 import benefitOneImg from '../public/js.png';
-import benefitTwoImg from '../public/img/benefit-two.png';
+import benefitTwoImg from '../public/img/grid-hr.png';
 
 const benefitOne = {
   title: 'Expertise in AG Grid, the gold standard for JavaScript grids',

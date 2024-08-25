@@ -14,7 +14,7 @@ export function Video({ videoId }: Readonly<VideoProps>) {
   return (
     <Container>
       <div className="relative w-full h-[500px] max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-indigo-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-indigo-700">
-        {!playVideo && (
+        {/* {!playVideo && (
           <button
             onClick={() => setPlayVideo(!playVideo)}
             className="absolute inset-auto w-16 h-16 text-white transform -translate-x-1/2 -translate-y-1/2 lg:w-28 lg:h-28 top-1/2 left-1/2"
@@ -34,14 +34,14 @@ export function Video({ videoId }: Readonly<VideoProps>) {
             <span className="sr-only">Play Video</span>
           </button>
         )}
-        {playVideo && (
-          <iframe
-            src={`https://www.youtube-nocookie.com/embed/${videoId}?controls=0&autoplay=1`}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="w-full h-full aspect-video"
-          ></iframe>
-        )}
+        {playVideo && ( */}
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${videoId}?controls=0&autoplay=1`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          className="w-full h-full aspect-video"
+        ></iframe>
+        {/* )} */}
       </div>
     </Container>
   );
